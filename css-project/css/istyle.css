@@ -1,0 +1,13 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    padding: 50px;
+    background-color: rgb(107, 137, 227);
+}
+
+a{
+    text-decoration: none;
+}
