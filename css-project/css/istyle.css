@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;800&display=swap');
+
 body{
+    font-family:"Frank Ruhl Libre", "Arial", "Helvetica", "sans-serif";
+    font-weight: 400;
 }
 
 a{
@@ -11,13 +15,14 @@ main{
 }
 
 header{
-    background-color: rgb(222, 235, 250);
+    background-color: rgb(211, 239, 245);
     padding: 0% 1.5% 1.5% 1.5%;
 }
 
 .headergrid{
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
 }
 
 .navlinkgrid{
@@ -29,9 +34,15 @@ header{
     margin: 0;
 }
 
+#flag{
+    justify-content: right;
+    display: flex;
+}
 
-h1{
 
+h1, h2, h3{
+    font-family:"Frank Ruhl Libre", "Arial", "Helvetica", "sans-serif";
+    font-weight: 800;
 }
 
 main{
@@ -49,22 +60,24 @@ footer{
     display: grid;
     grid-template-columns: 100px 100px;
 }
-
-h2{
-
-}
-
-h3{
-
-}
-
 #intro{
-
+   background-color: lightblue;
+   padding: 5% 10% 5% 10%;
+   margin-top: 5%;
+   
 }
 
 #geo{
-    
-  
+    margin-top: 5%;
+    border-top-width: 20px;
+    border-top-style: solid;
+    border-top-color: rgb(250, 196, 115);
+    background-color: rgb(247, 213, 161);
+    padding: 5% 10% 5% 10%;
+}
+#geo h3{
+    background-color: rgb(250, 196, 115);
+    padding: 5%;
 }
 
 .gridtwo{
@@ -74,9 +87,13 @@ h3{
 }
 
 #eco{
-    margin: 5% 10% 10% 15%;
-    padding: 5% 10% 10% 10%;
-    background-color: rgb(195, 221, 250);
+    margin: 5% 10% 5% 10%;
+    padding: 5% 10% 5% 10%;
+    background-color: rgb(211, 239, 245);
+    min-width: 600px;
+    border-top-width: 20px;
+    border-top-color: lightblue;
+    border-top-style: solid;
 }
 
 .gridthree{
@@ -87,5 +104,10 @@ h3{
 }
 
 #transnat{
+    padding: 5% 10% 5% 10%;
+    background-color: lightsalmon;
+}
 
+.transnatstyle{
+    background-color: lightseagreen;
 }
