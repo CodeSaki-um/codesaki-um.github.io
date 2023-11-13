@@ -70,30 +70,41 @@ footer{
 #geo{
     margin-top: 5%;
     border-top-width: 20px;
+    border-bottom-width: 20px;
     border-top-style: solid;
+    border-bottom-style: solid;
     border-top-color: rgb(250, 196, 115);
+    border-bottom-color: rgb(250, 196, 115);
     background-color: rgb(247, 213, 161);
-    padding: 5% 10% 5% 10%;
+    padding: 5% 10% 14% 10%;
+    min-width: 900px;
 }
 #geo h3{
     background-color: rgb(250, 196, 115);
-    padding: 5%;
+    padding: 1%;
+}
+
+#geo p{
+    margin-left: 2%;
 }
 
 .gridtwo{
-    display: flex;
-    grid-gap: 15%;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-gap: 5%;
+    /*flex-direction: row-reverse;*/
 }
 
 #eco{
     margin: 5% 10% 5% 10%;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 10% 8% 10%;
     background-color: rgb(211, 239, 245);
     min-width: 600px;
     border-top-width: 20px;
+    border-bottom-width: 20px;
     border-top-color: lightblue;
+    border-bottom-color: lightblue;
     border-top-style: solid;
+    border-bottom-style: solid;
 }
 
 .gridthree{
