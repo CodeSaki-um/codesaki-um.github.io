@@ -7,7 +7,9 @@ body{
 
 a{
     text-decoration: none;
-    background-color: rgb(104, 136, 176);
+    background-color: rgb(211, 239, 245);
+    padding: 3% 3% 3% 3%;
+    /*color: rgb(255 255 255);*/
 }
 
 main{
@@ -15,14 +17,30 @@ main{
 }
 
 header{
-    background-color: rgb(211, 239, 245);
+    background-color: rgb(173, 216, 230);
     padding: 0% 1.5% 1.5% 1.5%;
+}
+
+#drhead{
+    grid-area: drhead;
+}
+
+#navhead{
+    grid-area: navhead;
+    padding-top: 3%
+}
+
+#flag{
+    grid-area: flag;
 }
 
 .headergrid{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
+    grid-auto-rows: 50%;
+    grid-template-areas:
+    "drhead navhead"
+    ".         flag";
 }
 
 .navlinkgrid{
@@ -45,25 +63,28 @@ h1, h2, h3{
     font-weight: 800;
 }
 
-main{
-
-}
-
 footer{
-    background-color: lightgray;
+    background-color: rgb(212, 212, 212);
     margin: 0;
-    padding: 50px;
+    padding: 5%;
 }
 
 .footlinkgrid{
     list-style-type: none;
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 10% 10%;
 }
 #intro{
-   background-color: lightblue;
+   background-color: rgb(211, 239, 245);
    padding: 5% 10% 5% 10%;
    margin-top: 5%;
+   border-top-width: 20px;
+    border-bottom-width: 20px;
+   border-top-color: rgb(173, 216, 230);
+   border-bottom-color: rgb(173, 216, 230);
+   border-top-style: solid;
+   border-bottom-style: solid;
+
    
 }
 
@@ -79,12 +100,17 @@ footer{
     padding: 5% 10% 14% 10%;
     min-width: 900px;
 }
+
 #geo h3{
     background-color: rgb(250, 196, 115);
-    padding: 1%;
+    padding: .5%;
 }
 
 #geo p{
+    margin-left: 2%;
+}
+
+#size-comp{
     margin-left: 2%;
 }
 
@@ -101,8 +127,8 @@ footer{
     min-width: 600px;
     border-top-width: 20px;
     border-bottom-width: 20px;
-    border-top-color: lightblue;
-    border-bottom-color: lightblue;
+    border-top-color: rgb(173, 215, 230);
+    border-bottom-color: rgb(173, 215, 230);
     border-top-style: solid;
     border-bottom-style: solid;
 }
@@ -116,9 +142,20 @@ footer{
 
 #transnat{
     padding: 5% 10% 5% 10%;
-    background-color: lightsalmon;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgb(250, 196, 115);
+    border-bottom-color: rgb(250, 196, 115);
+    background-color: rgb(247, 213, 161);
+}
+
+#transnat h3{
+    background-color: rgb(250, 196, 115);
 }
 
 .transnatstyle{
-    background-color: lightseagreen;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
