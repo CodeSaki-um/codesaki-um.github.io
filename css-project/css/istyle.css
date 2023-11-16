@@ -6,10 +6,22 @@ body{
 }
 
 a{
+    color: black;
     text-decoration: none;
     background-color: rgb(211, 239, 245);
     padding: 3% 3% 3% 3%;
     /*color: rgb(255 255 255);*/
+}
+
+a:hover{
+    padding: 3% 3% 3% 3%;
+    text-decoration: none;
+    background-color: black;
+    color: rgb(173, 216, 230);
+}
+
+a:active{
+
 }
 
 main{
@@ -76,20 +88,22 @@ footer{
 }
 #intro{
    background-color: rgb(211, 239, 245);
-   padding: 5% 10% 5% 10%;
-   margin-top: 5%;
+   padding: 2% 10% 2% 10%;
+   /*margin-top: 2%;*/
    border-top-width: 20px;
     border-bottom-width: 20px;
    border-top-color: rgb(173, 216, 230);
    border-bottom-color: rgb(173, 216, 230);
    border-top-style: solid;
    border-bottom-style: solid;
+}
 
-   
+#intro h2{
+    margin-bottom: 4%;
 }
 
 #geo{
-    margin-top: 5%;
+    margin-top: 2%;
     border-top-width: 20px;
     border-bottom-width: 20px;
     border-top-style: solid;
@@ -97,8 +111,12 @@ footer{
     border-top-color: rgb(250, 196, 115);
     border-bottom-color: rgb(250, 196, 115);
     background-color: rgb(247, 213, 161);
-    padding: 5% 10% 14% 10%;
+    padding: 2% 10% 5% 10%;
     min-width: 900px;
+}
+
+#geo h2{
+    margin-bottom: 3%;
 }
 
 #geo h3{
@@ -116,13 +134,13 @@ footer{
 
 .gridtwo{
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 2%;
     /*flex-direction: row-reverse;*/
 }
 
 #eco{
-    margin: 5% 10% 5% 10%;
-    padding: 5% 10% 8% 10%;
+    margin: 2% 10% 2% 10%;
+    padding: 2% 10% 6% 10%;
     background-color: rgb(211, 239, 245);
     min-width: 600px;
     border-top-width: 20px;
@@ -141,7 +159,7 @@ footer{
 }
 
 #transnat{
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 2% 10%;
     border-top-width: 20px;
     border-bottom-width: 20px;
     border-top-style: solid;
@@ -154,8 +172,11 @@ footer{
 #transnat h3{
     background-color: rgb(250, 196, 115);
 }
+ #transnat h2{
+    margin-bottom: 4%;
+ }
 
 .transnatstyle{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
