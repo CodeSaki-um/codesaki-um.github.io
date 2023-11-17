@@ -5,6 +5,10 @@ body{
     font-weight: 400;
 }
 
+p{
+    max-width: 960px;
+}
+
 a{
     color: black;
     text-decoration: none;
@@ -24,9 +28,9 @@ a:active{
 
 }
 
-main{
+/*main{
     margin: 0% 2.5% 2.5% 2.5%;
-}
+}*/
 
 header{
     background-color: rgb(173, 216, 230);
@@ -35,6 +39,7 @@ header{
 
 #drhead{
     grid-area: drhead;
+    margin-left: 17%;
 }
 
 #navhead{
@@ -86,12 +91,13 @@ footer{
     display: grid;
     grid-template-columns: 10% 10%;
 }
+
 #intro{
    background-color: rgb(211, 239, 245);
    padding: 2% 10% 2% 10%;
-   /*margin-top: 2%;*/
+   margin-top: 2%;
    border-top-width: 20px;
-    border-bottom-width: 20px;
+   border-bottom-width: 20px;
    border-top-color: rgb(173, 216, 230);
    border-bottom-color: rgb(173, 216, 230);
    border-top-style: solid;
@@ -135,48 +141,70 @@ footer{
 .gridtwo{
     display: grid;
     grid-gap: 2%;
-    /*flex-direction: row-reverse;*/
+}
+
+.geoarea{
+
 }
 
 #eco{
-    margin: 2% 10% 2% 10%;
-    padding: 2% 10% 6% 10%;
-    background-color: rgb(211, 239, 245);
-    min-width: 600px;
-    border-top-width: 20px;
-    border-bottom-width: 20px;
-    border-top-color: rgb(173, 215, 230);
-    border-bottom-color: rgb(173, 215, 230);
-    border-top-style: solid;
-    border-bottom-style: solid;
+    margin: 5% 10% 5% 10%;
 }
+
 
 .gridthree{
     display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 5fr 5fr;
-    grid-gap: 10%;
+    grid-gap: 5%;
+    grid-template-areas: 
+    "gdp ecov"
+    "ind gdper";
+}
+
+#gdp,
+#gdper,
+#ind,
+#ecov{
+    padding-left: 5%;
+    border-style: solid;
+    border-color: rgb(173, 216, 230);
+    border-width: 20px;
+    background-color: rgb(211, 239, 245);
 }
 
 #transnat{
-    padding: 2% 10% 2% 10%;
-    border-top-width: 20px;
-    border-bottom-width: 20px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: rgb(250, 196, 115);
-    border-bottom-color: rgb(250, 196, 115);
+    padding: 5% 10% 5% 10%;   
     background-color: rgb(247, 213, 161);
+    margin-bottom: 10%;
 }
 
-#transnat h3{
-    background-color: rgb(250, 196, 115);
+#tncelltwo,
+#tncellone{
+    background-color: rgb(247, 213, 161);
+    border-bottom-width: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(250, 196, 115);
+    margin-left: 5%;
 }
- #transnat h2{
+
+#transnat h2{
     margin-bottom: 4%;
  }
 
-.transnatstyle{
-    margin-top: 2%;
-    margin-bottom: 2%;
+#transnat h3{
+    background-color: rgb(250, 196, 115);
+    padding-left: 5%;
 }
+
+#transnat p{
+    padding-left: 5%;
+}
+
+.tngrid{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+    "tncellone tncelltwo"
+    "tncellone tncelltwo";
+}
+
