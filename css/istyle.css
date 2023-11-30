@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Frank+Ruhl+Libre:wght@400;800&display=swap');
+
+
+body{
+    font-family:"Frank Ruhl Libre", "Arial", "Helvetica", "sans-serif";
+    font-weight: 400;
+}
+
+h2, h3{
+    font-family:"Frank Ruhl Libre", "Arial", "Helvetica", "sans-serif";
+    font-weight: 800;
+}
+
+h1,
+.opener{
+    font-family: "Abril Fatface", "Frank Ruhl Libre", "Arial", "Helvetica", "sans-serif";
+}
+
+p{
+    max-width: 960px;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(212, 212, 212);
+    padding: 0% 3% 3% 3%;
+}
+
+a:visited{
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        background-color: rgb(212, 212, 212);
+        padding: 0% 3% 3% 3%;
+}
+
+a:hover{
+    padding: 0% 3% 3% 3%;
+    text-decoration: none;
+    background-color: rgba(187, 186, 186, 0.457);
+    color: rgb(255, 255, 255);
+}
+
+a:active{
+    padding: 0% 3% 3% 3%;
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+header{
+    background-color: rgb(11, 46, 95);
+    padding: 0% 1.5% 1.5% 1.5%;
+    border-top: solid;
+    border-top-width: 20px;
+    border-top-color: rgb(212, 212, 212);
+}
+
+#drhead{
+    grid-area: drhead;
+    margin-left: 17%;
+    margin-top: 10%;
+    color: white;
+}
+
+#navhead{
+    grid-area: navhead;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.headergrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50%;
+    grid-template-areas:
+    "drhead navhead";
+}
+
+.navlinkgrid{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#flag{
+    justify-content: right;
+    display: flex;
+    margin: auto;
+    width: 15%;
+}
+
+.opener{
+    margin: auto;
+    width: 15%;
+    padding: 3%;
+    margin-top: 1%;
+}
+
+#intro{
+   border-top: solid;
+   border-top-color: rgb(11, 46, 95);
+   border-top-width: 10px;
+   border-bottom: solid;
+   border-bottom-color: rgb(11, 46, 95);
+   border-bottom-width: 10px;
+   background-color: rgb(244, 241, 241);
+}
+
+#introdiv {
+    padding: 2% 10% 2% 10%;
+    margin-bottom: 1%;
+}
+
+#introdiv p{
+    margin-left: 6%;
+}
+
+.flag{
+  margin: 5% 47% 5% 40%;
+}
+
+#geo{
+    margin-top: 2%;
+    margin-bottom: 15%;
+    padding: 2% 10% 5% 10%;
+    min-width: 900px;
+    background-color: rgba(187, 186, 186, 0.457);
+}
+
+#geo h3{
+    padding: .5%;
+}
+
+#geo p{
+    margin-left: 2%;
+}
+
+
+.gridtwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+#area,
+#landbound,
+#natres,
+#location{
+    padding: 5%;
+    background-color:rgb(212, 212, 212);
+    border-style: solid;
+    border-color: rgba(187, 186, 186, 0.457);
+    border-width: 5px;
+}
+
+#location{
+    grid-row-end: auto;
+}
+
+#eco{
+    background-color: rgba(187, 186, 186, 0.457);
+    margin-top: 2%;
+    padding: 2% 10% 7% 8%;
+}
+
+#eco h2{
+margin-left: 2.9%;
+}
+
+.gridthree{
+    margin-left: 12%;
+    margin-right: 10%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-areas: 
+    "gdp ecov"
+    "ind gdper";
+}
+
+#gdp{
+    grid-area: gdp;
+    background-color:rgb(212, 212, 212);
+    border-style: solid;
+    border-color: rgba(187, 186, 186, 0.457);
+    border-width: 5px;
+}
+
+#gdper{
+    grid-area: gdper;
+    background-color:rgb(212, 212, 212);
+    border-style: solid;
+    border-color: rgba(187, 186, 186, 0.457);
+    border-width: 5px;
+    padding-right: 1%;
+}
+
+#ind{
+    grid-area: ind;
+    background-color:rgb(212, 212, 212);
+    border-style: solid;
+    border-color: rgba(187, 186, 186, 0.457);
+    border-width: 5px;
+}
+
+#ecov{
+    grid-area: ecov;
+    background-color:rgb(212, 212, 212);
+    border-style: solid;
+    border-color: rgba(187, 186, 186, 0.457);
+    border-width: 5px;
+}
+
+#gdp,
+#gdper,
+#ind,
+#ecov{
+    padding-left: 5%;
+}
+
+#transnat{ 
+   padding: 5% 10% 5% 10%;   
+   border-top: solid;
+   border-top-color: rgb(11, 46, 95);
+   border-top-width: 10px;
+   border-bottom: solid;
+   border-bottom-color: rgb(11, 46, 95);
+   border-bottom-width: 10px;
+   background-color: rgb(244, 241, 241);
+}
+
+#illicit{
+    margin-bottom: 8%;
+}
+
+#tncelltwo,
+#tncellone{
+    margin-left: 8%;
+}
+
+#transnat h2{
+    margin-bottom: 0%;
+    margin-left: .5%;
+ }
+
+#transnat h3{
+    padding-left: 5%;
+}
+
+#transnat p{
+    padding-left: 5%;
+}
+
+.tngrid{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+    "tncellone tncelltwo"
+    "tncellone tncelltwo";
+}
+
+footer{
+    background-color: rgb(11, 46, 95);
+    padding: 5%;
+    border-bottom: solid;
+    border-bottom-color: rgb(212, 212, 212);
+    border-bottom-width: 10px;
+}
+
+footer p{
+    width: 40%;
+    margin-bottom: 2%;
+    margin-left: 37%;
+    color: rgb(255, 255, 255);
+}
+
+.footlinkgrid{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    margin-left: 35%;
+    width: 20%;
+    grid-gap: 5%;
+}
+
