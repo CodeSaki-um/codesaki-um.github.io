@@ -1,0 +1,56 @@
+body{
+    font-family: "Arial" "Helvetica", "Arial", sans-serif;
+}
+
+p{
+    max-width: 960px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+  }
+
+li{
+    list-style: none;
+}
+
+#hed{
+    padding-top: 220px;
+    padding-bottom: 220px;
+}
+#hed h1{
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+nav{
+    margin-bottom: 60px;
+}
+
+#works,
+#inquire{
+    margin: 60px;
+
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+footer p{
+    margin-left: 60px;
+    color: white;
+}
