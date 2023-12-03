@@ -25,23 +25,94 @@ li{
     list-style: none;
 }
 
+h1,
+h2{
+    background-color: lightsalmon;
+}
+
 #hed{
     padding-top: 220px;
     padding-bottom: 220px;
+    background-color: lightgreen;
 }
+
 #hed h1{
     margin-left: 100px;
     margin-right: auto;
 }
 
 nav{
+    padding-left: 0px;
+    padding-right: 40px;
+    background-color: aliceblue;
+    grid-area: nav;
     margin-bottom: 60px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+#na,
+#nb,
+#nc,
+#nd{
+    background-color: lightgrey;
+    text-align: center;
 }
 
 #works,
 #inquire{
-    margin: 60px;
+    margin-top: 220px;
+    margin-bottom: 220px;
+    background-color: lightblue;
+    padding: 140px;
 
+}
+
+#works{
+
+}
+
+#werkgrid{
+    background-color: lightgoldenrodyellow;
+    grid-area: nav;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.werks{
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.werks,
+.inq{
+    padding-left: 140px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-right: 180px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+#a,
+#b,
+#c,
+#d,
+#aa,
+#bb{
+    background-color: lightcyan;
+    text-align: center;
+}
+
+#inquire{
+}
+
+#inqgrid{
+    background-color: lightgoldenrodyellow;
 }
 
 footer{
