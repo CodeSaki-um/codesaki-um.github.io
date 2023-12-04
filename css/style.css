@@ -1,3 +1,4 @@
+/*home page*/
 body{
     font-family: "Arial" "Helvetica", "Arial", sans-serif;
 }
@@ -45,7 +46,6 @@ nav{
     padding-left: 0px;
     padding-right: 40px;
     background-color: aliceblue;
-    grid-area: nav;
     margin-bottom: 60px;
 }
 
@@ -106,13 +106,28 @@ nav{
 #bb{
     background-color: lightcyan;
     text-align: center;
+    padding: 60px;
+
 }
 
-#inquire{
+#abt{
+    background-color: lightblue;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 220px;
 }
 
-#inqgrid{
+#abt h2{
+    margin-bottom: 60px;
+    margin-left: 140px;
+}
+
+#abt p{
     background-color: lightgoldenrodyellow;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 60px;
+    padding: 60px;
 }
 
 footer{
@@ -124,4 +139,24 @@ footer{
 footer p{
     margin-left: 60px;
     color: white;
+}
+
+/*collab page*/
+
+.crahed{
+    background-color: lightslategray;
+    padding: 100px;
+}
+
+.cragrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+/*rand page*/
+
+/*inq page*/
+#inqgrid{
+    background-color: lightgoldenrodyellow;
 }
