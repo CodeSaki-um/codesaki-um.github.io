@@ -63,8 +63,7 @@ nav{
     text-align: center;
 }
 
-#works,
-#inquire{
+#works{
     margin-top: 220px;
     margin-bottom: 220px;
     background-color: lightblue;
@@ -85,10 +84,6 @@ nav{
 
 .werks{
     grid-template-rows: repeat(2, 1fr);
-}
-
-.werks,
-.inq{
     padding-left: 140px;
     padding-top: 140px;
     padding-bottom: 140px;
@@ -159,4 +154,21 @@ footer p{
 /*inq page*/
 #inqgrid{
     background-color: lightgoldenrodyellow;
+}
+
+.inq{
+    padding-left: 140px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-right: 180px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+#inquire{
+    margin-top: 220px;
+    margin-bottom: 220px;
+    background-color: lightblue;
+    padding: 140px;
 }
