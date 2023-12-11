@@ -1,6 +1,16 @@
 /*home page*/
-body{
-    font-family: "Arial" "Helvetica", "Arial", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+#bodyone{
+    font-family: "Caprasimo", "Arial", "Helvetica", "Arial", sans-serif;
+    background-image: radial-gradient(rgb(255, 255, 0), rgb(255, 0, 0), rgb(0, 0, 255), rgb(0, 0, 0));
+}
+
+h1,
+h2,
+h3,
+p{
+    color: white;
 }
 
 p{
@@ -9,166 +19,378 @@ p{
 
 a:link {
     text-decoration: none;
+    color: rgb(255, 69, 0);
   }
   
   a:visited {
-
+    color: rgb(255, 255, 0);
   }
   
   a:hover {
     text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 0);
+    color: rgb(255, 105, 180);
   }
-  
+
   a:active {
+    color: rgb(255, 0, 0);
   }
 
 li{
     list-style: none;
 }
 
-h1,
-h2{
-    background-color: lightsalmon;
-}
-
-#hed{
-    padding-top: 220px;
-    padding-bottom: 220px;
-    background-color: lightgreen;
-}
-
-#hed h1{
-    margin-left: 100px;
-    margin-right: auto;
-}
-
-nav{
-    padding-left: 0px;
-    padding-right: 40px;
-    background-color: aliceblue;
-    margin-bottom: 60px;
-}
-
-.grid{
+.hedgrid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: 38% 62%;
+    grid-gap: 0px;
+}
+
+#hedr h1{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0px;
+    padding: 50px;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 55px;
+}
+
+.navgrid{
+    display: grid;
+    grid-gap: 50px;
+    font-size: 30px;
 }
 
 #na,
 #nb,
 #nc,
 #nd{
-    background-color: lightgrey;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 45%;
     text-align: center;
 }
 
-#works{
-    margin-top: 220px;
-    margin-bottom: 220px;
-    background-color: lightblue;
-    padding: 140px;
+#story{
+    background-image: url("../patterns/darkness.webp");
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px 60px 40px 60px;
+    font-size: 30px;
+}
+
+#story h2{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+
+#story p{
+    background-color: rgb(255, 69, 0);
+    padding: 20px;
 
 }
 
-#works{
-
-}
-
-#werkgrid{
-    background-color: lightgoldenrodyellow;
-    grid-area: nav;
-    margin-bottom: 20px;
-    margin-top: 60px;
-}
-
-.werks{
-    grid-template-rows: repeat(2, 1fr);
-    padding-left: 140px;
-    padding-top: 140px;
-    padding-bottom: 140px;
-    padding-right: 180px;
+.storygrid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: 50% 50%;
+    margin-left: 15px;
+}
+
+#collabs{
+    font-size: 30px;
+    padding: 20px 60px 140px 60px;
+    background-image: url("../patterns/darkness.webp");
+    background-attachment: fixed;
+}
+
+#collabs h2{
+    padding-bottom: 0px;
+}
+
+#collabs h3{
+    margin-top: 0px;
+
+}
+
+.collab{
+    grid-template-rows: repeat(4, 35%);
+    display: grid;
+    grid-gap: 20px;
+}
+
+.collab-content{
+    padding-left: 40px;
 }
 
 #a,
 #b,
-#c,
-#d,
-#aa,
-#bb{
-    background-color: lightcyan;
-    text-align: center;
-    padding: 60px;
-
-}
-
-#abt{
-    background-color: lightblue;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-bottom: 220px;
-}
-
-#abt h2{
-    margin-bottom: 60px;
-    margin-left: 140px;
-}
-
-#abt p{
-    background-color: lightgoldenrodyellow;
-    margin-left: 140px;
-    margin-right: 140px;
-    margin-bottom: 60px;
-    padding: 60px;
+#c{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.425);
 }
 
 footer{
+    margin-top: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
 }
 
 footer p{
-    margin-left: 60px;
-    color: white;
+    margin-left: 20px;
 }
 
-/*collab page*/
+/*COLLABBBSSS*/
+
+#bodytwo{
+   font-family: "Caprasimo", "Arial", "Helvetica", "Arial", sans-serif;
+   background-image: url("../images/story-bg-img.jpg");
+   background-attachment: fixed;
+}
+
+.crahed h1{
+    background-color: rgb(0, 0, 0);
+    padding: 25px 40px 25px 20px;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 0px;
+}
 
 .crahed{
-    background-color: lightslategray;
-    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 0px 100px 0px 100px;
+    font-size: 30px;
+    margin: 0px;
 }
 
 .cragrid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+    padding-right: 40px;
+    margin-right: 10px;
+}
+
+#nca,
+#ncb,
+#ncc,
+#ncd{
+    background-color: black;
+    padding: 10px;
+    border-radius: 45%;
+    text-align: center;
+}
+
+#photo{
+    background-color: rgba(0, 0, 0, 0.471);
+    padding: 60px 100px 100px 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#digmed{
+    background-color: rgba(0, 0, 0, 0.471);
+    padding: 60px 100px 80px 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.collabgrid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#coltwo p{
+    margin-top: 0px;
 }
 
 /*rand page*/
-
-/*inq page*/
-#inqgrid{
-    background-color: lightgoldenrodyellow;
+#bodythree{
+    font-family: "Caprasimo", "Arial", "Helvetica", "Arial", sans-serif;
+    background-image: url(../images/rand-bg-two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.inq{
-    padding-left: 140px;
-    padding-top: 140px;
-    padding-bottom: 140px;
-    padding-right: 180px;
+.rrahed h1{
+    background-color: rgb(0, 0, 0);
+    padding: 25px 40px 25px 20px;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 0px;
+}
+
+#nra,
+#nrb,
+#nrc,
+#nrd{
+    background-color: black;
+    padding: 10px;
+    border-radius: 45%;
+    text-align: center;
+}
+
+#rand-one{
+    padding-top: 20px;
+}
+
+.rrahed{
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 0px 100px 0px 100px;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.rragrid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding-right: 40px;
+    margin-right: 10px;
+}
+
+.randabtgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#abtp{
+    margin-top: 0px;
+}
+
+#abtpt{
+    margin-top: 90px;
+    margin-bottom: 0px;
+    
+}
+
+#abtrand{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-top: 100px;
+    padding: 20px 60px 60px 60px;
+    font-size: 30px;
+}
+
+#randgraphics{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-top: 100px;
+    padding: 20px 60px 60px 60px;
+    font-size: 30px;
+}
+
+#randgraphics div{
+    margin-left: 160px;
+}
+
+#randart{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-top: 100px;
+    padding: 20px 60px 60px 60px;
+    font-size: 30px;
+}
+
+#randart div{
+    margin-left: 20px;
+}
+
+/*INQUIRY PAGE*/
+
+#bodyfour{
+        font-family: "Caprasimo", "Arial", "Helvetica", "Arial", sans-serif;
+        background-image: /*radial-gradient(rgb(255, 255, 0), rgb(255, 0, 0), rgb(0, 0, 255), rgb(0, 0, 0))*/ url(../images/rand-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.arahed{
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 0px 100px 0px 100px;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.arahed h1{
+    background-color: rgb(0, 0, 0);
+    padding: 25px 40px 25px 20px;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 0px;
+}
+
+.aragrid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding-right: 40px;
+    margin-right: 10px;
+}
+
+#naa,
+#nab,
+#nac,
+#nad{
+    background-color: black;
+    padding: 10px;
+    border-radius: 45%;
+    text-align: center;
+}
+
+
+#filler{
+    margin-top: 220px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 60px;
+    font-size: 40px;
+}
+
+#filler p{
+    margin-left: 240px;
 }
 
 #inquire{
     margin-top: 220px;
     margin-bottom: 220px;
-    background-color: lightblue;
-    padding: 140px;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 40px 60px 10px 60px;
+    font-size: 30px;
 }
+
+#inquire h2{
+    margin-bottom: 0px;
+}
+
+.inq{
+    margin-top: 0px;
+    padding: 60px;
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    grid-gap: 30px;
+}
+
+#aa,
+#bb,
+#cc{
+    background-color: black;
+    padding: 40px;
+    border-radius: 45%;
+    text-align: center;
+}
+
+
+
